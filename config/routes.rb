@@ -3,5 +3,5 @@ Rails.application.routes.draw do
 
   resources :tasks
   resources :users, only: [:create, :new]
-  resources :sessions, only: [:new, :create]
+  resources :sessions, only: [:new, :create, :destroy]
 end
